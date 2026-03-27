@@ -124,8 +124,8 @@ class FeatureFusion(nn.Module):
         return x * weight + y * (1 - weight)
 
 
-# 定义U-Net 网络
-class UNet(nn.Module):
+# 定义网络
+class HSSFN(nn.Module):
     def __init__(self,num_class,n_bandas):
         super(UNet, self).__init__()
 
